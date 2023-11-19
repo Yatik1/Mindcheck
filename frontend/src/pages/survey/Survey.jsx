@@ -48,7 +48,7 @@ const Survey = () => {
     };
 
     axios 
-       .post('http://localhost:8000/questions' , data)
+       .post('https://mindcheck-server.vercel.app/questions' , data)
        .then(() => {
         alert('Successfully recorded')
          console.log('response has been added successfully')
