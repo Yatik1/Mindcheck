@@ -17,7 +17,9 @@ app.use(cors())
 app.get('/'  , (req,res) => {
     return res.status(234).send("Server is on ! ")
 })
-
+app.get('/questions'  , (req,res) => {
+    return res.status(234).send("Welcome to mindcheck server ! ")
+})
 app.post('/questions' , async (req,res) => {
      try {
         if(
