@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 
 import "./style.scss"
@@ -11,10 +10,7 @@ const Survey = () => {
   const [id,setId] = useState(0)
   const [selected , setSelected] = useState(false)
   const [response , setResponse] = useState(null)
- 
-
-
-  
+   
   useEffect(() => {
     const fetchData = async () => {
        try {
@@ -29,18 +25,12 @@ const Survey = () => {
     }
     fetchData();
   } , [])
-
-  
- 
-  console.log(selected)
   
   const nextClick = ({id }) => {
-    alert(`question number ${id + 1} and you selected response value is ${response}`)    
     setId(prev => prev+1)
     setSelected(false) 
 
     const questionNumber = id+1
-    console.log({questionNumber,response})
 
     const data = {
       questionNumber , 
@@ -50,11 +40,9 @@ const Survey = () => {
     axios 
        .post('https://mindcheck-server.vercel.app/questions' , data)
        .then(() => {
-        alert('Successfully recorded')
          console.log('response has been added successfully')
        })
        .catch((err)=> {
-        alert('Something Happen')
         console.log(err)
        })
   } 
@@ -66,8 +54,6 @@ const Survey = () => {
   }
 
   const optionSelected = ( {id ,option}) => {
-
- 
      setSelected(true)
      setResponse(option)
   }
@@ -81,7 +67,7 @@ const Survey = () => {
   }
 
   const questionId = question[id]
-  // console.log(questionId)
+
   return (
 
     <section key={id}>
