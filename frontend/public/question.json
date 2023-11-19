@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "question" : "I spend an appropriate amount of time on social media and screens." , 
+        "options" : [1,2,3,4,5] 
+    } , 
+    {
+        "id": 2,
+        "question" : "My household environment positively impacts my mental well-being." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 3,
+        "question" : "Past traumas have a significant influence on my mental health." , 
+        "options"  : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 4,
+        "question" : " My physical well-being is not affected by any disabilities or discomfort." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 5,
+        "question" : "I feel significant stress due to academic pressures, such as job scarcity or recession." , 
+        "options"  : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 6,
+        "question" : "Peer pressure plays a role in my participation in social activities or events." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 7,
+        "question" : "I do not have any addictions, such as alcohol or drugs." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 8,
+        "question" : "I am satisfied with the quality of my romantic and friendship relationships." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 9,
+        "question" : "I am motivated to pursue engineering for my own reasons and not due to family expectations." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 10,
+        "question" : "I am anxious about my future after graduation." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 11,
+        "question" : "I am concerned about political issues affecting my country." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 12,
+        "question" : "Economic issues have a substantial impact on my mental well-being." , 
+        "options"  : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 13,
+        "question" : "Environmental issues, like climate change, significantly worry me." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 14,
+        "question" : "I have sought professional help for mental health issues." , 
+        "options"  : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 15,
+        "question" : "I engage in physical activity or exercise to manage stress effectively" , 
+        "options"  : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 16,
+        "question" : "I maintain a healthy diet and eating habits." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 17,
+        "question" : "I manage my time and workload effectively as an engineering student." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 18,
+        "question" : "I have experienced bullying or discrimination during my engineering studies." , 
+        "options"  : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 19,
+        "question" : "I often experience sleep disturbances or insomnia." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 20,
+        "question" : "I regularly practice mindfulness or relaxation techniques for stress relief." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 21,
+        "question" : "I frequently engage in hobbies or interests outside of my engineering studies." , 
+        "options"  : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 22,
+        "question" : "I am comfortable discussing my mental health concerns with friends or family." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 23,
+        "question" : "I have never contemplated or attempted self-harm or suicide." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 24,
+        "question" : "I feel well-connected to my engineering professors and mentors." , 
+        "options" : [1,2,3,4,5] 
+
+    } , 
+    {
+        "id": 25,
+        "question" : "My mental health has changed since I started my engineering program." , 
+        "options"  : [1,2,3,4,5] 
+
+    } 
+]
+                

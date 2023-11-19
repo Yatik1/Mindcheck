@@ -1,0 +1,29 @@
+
+nav{
+    min-width: fit-content;
+    font-family: 'Dela Gothic One', sans-serif;
+    margin: 2.89rem;
+    height: 100%; 
+
+    .navbar {
+        text-decoration: none;
+        h3{
+            color: black;
+        }
+    }
+    
+} 
+
+@media (max-width : 500px) {
+    nav {
+        margin: 0;
+        margin-top: 3rem;
+        margin-left: 2rem;
+         h3{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+
+         }
+    }
+}
