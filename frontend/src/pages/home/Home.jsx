@@ -1,24 +1,43 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import "./style.scss"
+
+// import { img } from './assets'
+
 const Home = () => {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const handleSurvey = () => {
-          navigate('/questions');
-    }
-    
-
+  const handleForm = () => {
+        navigate('/form');
+  }
+  
 
   return (
-    <div>
-        <h1>Welcome to the survey </h1>
-         <h3>Click buton to participate in our survey !!</h3>
-        <div>
-            <button onClick={handleSurvey}>Start your survey </button>
-        </div>
-    </div>
+    <main>
+        <article className="center">
+        <div className='navbar'>
+             <h1>
+               MINDCHECK
+             </h1>
+          </div>
+          <header>
+              <div className="content">
+                <p>It is normal to feel <br></br>sad, stressed and<br></br>
+                  anxious during a crisis.
+                </p>
+                <div>
+                  <button className="homeBtn"  onClick={handleForm}>Let's Start</button>
+                </div>
+              </div>
+              {/* <div className="image">
+                   <img src={img} alt='img' />
+              </div>
+           */}
+          </header>
+        </article>
+    </main>
   )
 }
 
