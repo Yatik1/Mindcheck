@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import "./style.scss"
+import Navbar from '../../components/navbar/Navbar.jsx'
 
 
 const Survey = () => {
@@ -69,22 +70,30 @@ const Survey = () => {
   const questionId = question[id]
 
   return (
-
-    <section key={id}>
-        <h2 className='question' key={questionId.id}> <span>{questionId.id}. </span> {questionId.question} </h2>
-       
-        <ul className='options'>
-          {questionId.options?.map((option , optionIndex) => (
-            <li className='option' key={optionIndex} onClick={() => optionSelected({id ,option})}>{option}</li>
-          ))}  
-        </ul>
-
-        <div className="buttons">
-           <button className={`${id === 0 ? 'nobutton' : 'white' }`} onClick={() => prevClick(setResponse)}>Back</button>
-           <button className='coloured' onClick={() => nextClick({id})} disabled={!selected}>{`${id === question.length-1 ? "Submit" : "Next"}`}</button>
-        </div>   
+    <>
+      
+      <Navbar />
+      
+      <section key={id}>
+  
+   
+          <h2 className='question' key={questionId.id}> <span>{questionId.id}. </span> {questionId.question} </h2>
  
-    </section>
+            <ul className='options'>
+              {questionId.options?.map((option , optionIndex) => (
+                <li className='option' key={optionIndex} onClick={() => optionSelected({id ,option})}>{option}</li>
+              ))}  
+           </ul>
+
+          <div className="buttons">
+             <button className={`${id === 0 ? 'nobutton' : 'white' }`} onClick={() => prevClick(setResponse)}>Back</button>
+             <button className='coloured' onClick={() => nextClick({id})} disabled={!selected}>{`${id === question.length-1 ? "Submit" : "Next"}`}</button>
+          </div>   
+
+      </section>
+
+    </>
+
    
   )
 }
