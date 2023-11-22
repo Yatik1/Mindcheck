@@ -1,0 +1,73 @@
+  .page {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBDEFD;
+  }
+  
+  h1{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 4.5vh;
+    margin: 2.5vh;
+  }
+  
+  .cover{
+    background-color: #fff;
+    width: 30em;
+    height: 32em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.55em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+  }
+  
+  input{
+    border: none;
+    color: black;
+    background: #DBDEFD;
+    height: 0.20rem;
+    width: 80%;
+    border-radius: 10px;
+    padding: 2em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    outline-color:transparent;
+  }
+   .dob {
+    color: rgba(0, 0, 0, 0.66);
+  }
+
+  .btn{
+    width: 8.5rem;
+    height: 3rem;
+    background-color: #6C72D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+  
+  }
+  
+  .btn:hover { transform: scale(1.1); }
+
+  @media only screen and (max-width : 450px) {
+    .cover{
+        width: 90vw;
+    }
+    input{
+        width: 60vw;
+        padding: 1.8em;
+    }
+  }
