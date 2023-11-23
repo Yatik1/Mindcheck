@@ -1,21 +1,22 @@
+
 main {
     background-color: black;
     position: absolute;
     color: #FAE7C9;
     width: 100%;
-    
+    height: 100%;
     
 article{
     
     background-color: #6C72D1;
-    margin: 28px;  
+    margin: 58px;  
     padding: 20px;
     border-radius: 10px;
     height: 33rem;
 
     .navbar h1{
         position: absolute;
-        margin: 30px;
+        margin: 39px;
         left: 90px;
         top: 60px;
         font-family: 'Dela Gothic One', cursive;
@@ -25,6 +26,7 @@ article{
 
       header{
         .content{
+            
             p{
                 position: absolute;
                 top: 13.76rem;
@@ -55,7 +57,7 @@ article{
 @media (max-width: 770px) {
    main{
     position: absolute;
-    
+    height:fit-content;
     article {
       .center{
         display: flex;
@@ -91,9 +93,14 @@ article{
 
 @media (max-width: 510px) {
     main{
+        height:100%;
+
         article{
+            margin-top: 110px;
+            height: 70%;
             .navbar{
                 h1{
+                    margin-top: 190px;
                     padding: 0.7rem;
                     font-size: 2rem;
                 }
@@ -103,12 +110,14 @@ article{
                 .content{
                    p{
                     margin-left: 35px;
+                    margin-top: 158px;
                     padding: 0.7rem;
                     font-size: 1.8rem;
                    }
                 }
                 
                 button {
+                    margin-top: 150px;
                     margin-left: 30px;
                 }
             }
@@ -119,8 +128,11 @@ article{
 @media (max-width: 410px){
     main{
         article{
+            margin-top: 80px;
             .navbar{
                 h1{
+                    margin-top: 70px;
+                    margin-left:30px ;
                     padding: 0.7rem;
                     font-size: 1.7rem;
                 }
@@ -129,15 +141,17 @@ article{
             header{
                 .content{
                    p{
-                    margin-left: 20px;
+                    margin-top: 50px;
+                    margin-left: 29px;
                     padding: 0.7rem;
-                    font-size: 1.7rem;
+                    font-size: 1.5rem;
                    }
                 }
                 
                 button {
-                    margin-left: 8px;
-                    float: left;
+                    margin-top: 20px;
+                    margin-left: 3px;
+                    // float: left;
                 }
             }
         }
