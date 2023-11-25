@@ -64,7 +64,7 @@ const Survey = () => {
    } 
  
   if (id > question.length-1) {
-      return  <h1>Thanks you for participating .... </h1>
+      return  <h1><Thank you for taking the time to complete this survey and contribute to our research. Your responses will be kept private.<h1>
   }
 
   const questionId = question[id]
