@@ -1,9 +1,5 @@
-
-body{
-    height:fit-content;
-  }
-  
   section{ 
+    
       display: flex;
       justify-content: center;
       align-items: center;
@@ -13,10 +9,9 @@ body{
   
   
     h2{
-      // background-color: aquamarine;
       font-family: 'Poppins', sans-serif;
-      // width: fit-content;
       line-height: 1.23;
+      margin-top: 1.6rem;
       padding: 0.8rem;
       font-size: 2rem;
       } 
@@ -155,3 +150,4 @@ body{
           }
         }
     }
+
