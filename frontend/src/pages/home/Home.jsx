@@ -26,10 +26,8 @@ const Home = () => {
               <div className="content">
                 <p>It is normal to feel <br></br>sad, stressed and<br></br>
                   anxious during a crisis.
-                </p>
-                <div>
-                  <button className="homeBtn"  onClick={handleForm}>Let's Start</button>
-                </div>
+                </p>   
+                <button className="homeBtn"  onClick={handleForm}>Let's Start</button> 
               </div>
               {/* <div className="image">
                    <img src={img} alt='img' />
