@@ -1,0 +1,26 @@
+
+.message{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    
+    span{
+        margin: 4rem;
+        padding: 1rem;
+        // margin-top: 2rem;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+     
+    }
+  }
+
+  @media (max-width : 490px) {
+    .message {
+        span {
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+    }
+  }
