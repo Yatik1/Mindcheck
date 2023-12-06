@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import "./style.scss"
 import Navbar from '../../components/navbar/Navbar.jsx'
+import ThanksPage from '../thanks/ThanksPage.jsx'
 
 
 const Survey = () => {
@@ -64,7 +65,7 @@ const Survey = () => {
    } 
  
   if (id > question.length-1) {
-      return  <p>Thank you for taking the time to complete this survey and contribute to our research. Your responses will be kept private.</p>
+    return <ThanksPage />
   }
 
   const questionId = question[id]
