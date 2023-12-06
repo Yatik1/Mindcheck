@@ -26,7 +26,7 @@ app.post('/questions' , async (req,res) => {
             !req.body.questionNumber ||
             !req.body.response 
         ) {
-            return response.status(400).send({message: 'Sends all the required fields:(title ,author,publishYear)'})
+            return response.status(400).send({message: 'Sends all the required fields'})
         }
         const surveyResponse = {
             questionNumber :req.body.questionNumber,
