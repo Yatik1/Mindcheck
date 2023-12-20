@@ -31,7 +31,7 @@ const Survey = () => {
   const nextClick = ({id }) => {
     setId(prev => prev+1)
     setSelected(false) 
-
+    setResponse(false)
     const questionNumber = id+1
 
     const data = {
@@ -55,7 +55,7 @@ const Survey = () => {
     setResponse(null)
   }
 
-  const optionSelected = ( {id ,option}) => {
+  const optionSelected = ( {option}) => {
      setSelected(true)
      setResponse(option)
   }
@@ -82,7 +82,7 @@ const Survey = () => {
  
             <ul className='options'>
               {questionId.options?.map((option , optionIndex) => (
-                <li className='option' key={optionIndex} onClick={() => optionSelected({id ,option})}>{option}</li>
+                <li className={` option ${response === option ? "selected" : ""}`} key={optionIndex} onClick={() => optionSelected({id ,option})}>{option}</li>
               ))}  
            </ul>
 
