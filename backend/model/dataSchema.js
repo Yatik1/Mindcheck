@@ -6,10 +6,7 @@ const surveySchema = new mongoose.Schema(
             type: Number,
             required: true,
         },
-        response: [{
-            type: Number,
-            required: true,
-        }],
+        response: [ ],
     },
     {
         timestamps: true,
