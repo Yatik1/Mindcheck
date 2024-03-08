@@ -18,7 +18,7 @@ function Form() {
       if (!fullName || !semester) {
         toast.warn('Enter All the required fields', {
           position: "top-center",
-          autoClose: 500,
+          autoClose: 1000,
           hideProgressBar: true,
           closeOnClick: true,
           pauseOnHover: false,
