@@ -42,7 +42,7 @@ function Form() {
             fullName,semester
           });
 
-          toast.success('Enter All the required fields', {
+          toast.success('Form submitted successfully', {
             position: "top-center",
             autoClose: 1000,
             hideProgressBar: true,
@@ -59,7 +59,7 @@ function Form() {
       } catch (error) {
         console.log("Signup error : " , error)
 
-        toast.error('Enter All the required fields', {
+        toast.error('Error occurred while submitting form', {
           position: "top-center",
           autoClose: 1000,
           hideProgressBar: true,
