@@ -18,14 +18,14 @@ function Form() {
       if (!fullName || !semester) {
         toast.warn('Enter All the required fields', {
           position: "top-center",
-          autoClose: 2000,
-          hideProgressBar: false,
+          autoClose: 500,
+          hideProgressBar: true,
           closeOnClick: true,
           pauseOnHover: false,
           draggable: false,
-          // progress: undefined,
+          progress: undefined,
           theme: "colored",
-          transition: "Bounce",
+          transition: Bounce,
           });
       
         return;
