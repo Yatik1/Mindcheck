@@ -2,17 +2,40 @@ const express = require("express")
 const mongoose = require('mongoose')
 const cors = require("cors");
 const Database = require('./model/dataSchema')
+const User = require("./model/userSchema")
 
 const dotenv = require('dotenv');
 dotenv.config();
 
-const PORT = 8000;
-
+const PORT = process.env.PORT || 8000;
 
 const app = express()
 app.use(express.json());
 
 app.use(cors())
+
+app.post('/form' , async(req,res) => {
+    try {
+        const {fullName , semester} = req.body
+        if(!fullName || !semester) {
+            return response.status(400).send({message: 'Sends all the required fields'})
+        }
+
+        const userFields = {
+            fullName,
+            semester
+        };
+
+        const newUser = await User.create(userFields)
+        return res.status(201).send(newUser)
+
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send({message : error.message}) 
+    }
+})
+
+
 
 app.get('/'  , (req,res) => {
     return res.status(234).send("Server is on ! ")
