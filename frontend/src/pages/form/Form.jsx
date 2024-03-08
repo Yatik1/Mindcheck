@@ -25,7 +25,7 @@ function Form() {
           draggable: true,
           progress: undefined,
           theme: "colored",
-          transition: Bounce,
+          transition: "Bounce",
           });
       
         return;
