@@ -85,7 +85,7 @@ function Form() {
               required />
 
        <input type="text" 
-              placeholder="Emter your Semester" 
+              placeholder="Enter your Semester" 
               value={semester}
               onChange={(e) => setSemester(e.target.value)}
               required />
