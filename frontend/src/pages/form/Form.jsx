@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import "./style.css"
-import useToast from "@chakra-ui/toast"
+import { useToast } from "@chakra-ui/react"
 
 
 function Form() {
