@@ -10,7 +10,6 @@ function Form() {
   const [fullName , setFullName] = useState("") 
   const [semester , setSemester] = useState("") 
 
-  const toast = useToast();
   const navigate = useNavigate();
 
   const handleSurvey = async (e) => {
