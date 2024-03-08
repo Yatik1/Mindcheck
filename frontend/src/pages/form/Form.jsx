@@ -42,27 +42,34 @@ function Form() {
             fullName,semester
           });
 
-          toast({
-            title: "Login Successful",
-            status: "success",
-            duration: 5000,
-            isClosable: true,
-            position: "top",
-          });
+          toast.success('Enter All the required fields', {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+            });
 
           navigate('/questions');
 
       } catch (error) {
         console.log("Signup error : " , error)
 
-        toast({
-          title: "Error Occured!",
-          description: error.response.data.message,
-          status: "error",
-          duration: 5000,
-          isClosable: true,
-          position: "top",
-        });
+        toast.error('Enter All the required fields', {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+          });
 
       }
   }
