@@ -12,7 +12,7 @@ function Form() {
 
   const navigate = useNavigate();
 
-  const handleSurvey = async (e) => {
+  const handleForm = async (e) => {
       e.preventDefault()
 
       if (!fullName || !semester) {
@@ -37,10 +37,6 @@ function Form() {
             fullName,
             semester
           })          
-
-          console.log({
-            fullName,semester
-          });
 
           navigate('/questions');
 
@@ -73,6 +69,7 @@ function Form() {
 
       }
   }
+  
   return (
 
     <form className="page" >
@@ -90,7 +87,7 @@ function Form() {
               onChange={(e) => setSemester(e.target.value)}
               required />
 
-       <div className="btn" onClick={handleSurvey}>Let's Get Started</div>
+       <div className="btn" onClick={handleForm}>Let's Get Started</div>
        <ToastContainer />
      </div>
     </form>
