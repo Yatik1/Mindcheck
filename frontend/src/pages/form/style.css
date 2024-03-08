@@ -16,7 +16,7 @@
   .cover{
     background-color: #fff;
     width: 30em;
-    height: 32em;
+    height: 28em;
     position: relative;
     border-radius: 1em;
     box-shadow: 0 0.188em 1.55em rgb(156, 156, 156);
@@ -28,7 +28,6 @@
   
   input{
     border: none;
-    color: black;
     background: #DBDEFD;
     height: 0.20rem;
     width: 80%;
@@ -38,10 +37,6 @@
     font-family: 'Poppins', sans-serif;
     outline-color:transparent;
   }
-   .dob {
-    color: rgba(0, 0, 0, 0.66);
-  }
-
   .btn{
     width: 8.5rem;
     height: 3rem;
