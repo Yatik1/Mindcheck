@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import "./style.css"
-import { useToast } from "@chakra-ui/react"
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Form() {
 
@@ -17,13 +17,18 @@ function Form() {
       e.preventDefault()
 
       if (!fullName || !semester) {
-        toast({
-          title: "Please Fill all the Feilds",
-          status: "warning",
-          duration: 5000,
-          isClosable: true,
-          position: "top",
-        });
+        toast.warn('Enter All the required fields', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+          });
+      
         return;
       }
 
@@ -80,6 +85,7 @@ function Form() {
               required />
 
        <div className="btn" onClick={handleSurvey}>Let's Get Started</div>
+       <ToastContainer />
      </div>
     </form>
   )
