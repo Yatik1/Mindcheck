@@ -18,7 +18,7 @@ app.post('/form' , async(req,res) => {
     try {
         const {fullName , semester} = req.body
         if(!fullName || !semester) {
-            return response.status(400).send({message: 'Sends all the required fields'})
+            return res.status(400).send({message: 'Sends all the required fields'})
         }
 
         const userFields = {
