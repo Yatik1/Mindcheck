@@ -37,8 +37,7 @@ function Form() {
             fullName,
             semester
           }) 
-
-          toast.success('Form submitted successfully', {
+           .then(() => toast.success('Form submitted successfully', {
             position: "top-center",
             autoClose: 1000,
             hideProgressBar: true,
@@ -48,7 +47,8 @@ function Form() {
             progress: undefined,
             theme: "colored",
             transition: Bounce,
-            });
+            }))
+          
 
           console.log({
             fullName,semester
