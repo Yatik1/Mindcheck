@@ -36,8 +36,15 @@ function Form() {
           .post("https://mindcheck-server.vercel.app/form" , {
             fullName,
             semester
-          }) 
-           .then(() => toast.success('Form submitted successfully', {
+          })          
+
+          console.log({
+            fullName,semester
+          });
+
+          navigate('/questions');
+
+          toast.success('Form submitted successfully', {
             position: "top-center",
             autoClose: 1000,
             hideProgressBar: true,
@@ -47,15 +54,7 @@ function Form() {
             progress: undefined,
             theme: "colored",
             transition: Bounce,
-            }))
-          
-
-          console.log({
-            fullName,semester
-          });
-
-
-          navigate('/questions');
+            })
 
       } catch (error) {
         console.log("Signup error : " , error)
