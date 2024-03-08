@@ -43,6 +43,11 @@ app.get('/'  , (req,res) => {
 app.get('/questions'  , (req,res) => {
     return res.status(234).send("Welcome to mindcheck server ! ")
 })
+
+app.get("/form" , (req,res) => {
+    res.send("Form are connected to the backend ! ")
+})
+
 app.post('/questions' , async (req,res) => {
      try {
         if(
