@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import "./style.css"
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast , Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Form() {
