@@ -38,10 +38,6 @@ function Form() {
             semester
           }) 
 
-          console.log({
-            fullName,semester
-          });
-
           toast.success('Form submitted successfully', {
             position: "top-center",
             autoClose: 1000,
@@ -53,6 +49,11 @@ function Form() {
             theme: "colored",
             transition: Bounce,
             });
+
+          console.log({
+            fullName,semester
+          });
+
 
           navigate('/questions');
 
