@@ -49,25 +49,23 @@ app.get("/form" , (req,res) => {
 })
 
 app.post('/questions' , async (req,res) => {
-     try {
-        if(
-            !req.body.questionNumber ||
-            !req.body.response 
-        ) {
-            return response.status(400).send({message: 'Sends all the required fields'})
+    try {
+        const { responses } = req.body;
+
+        console.log({responses})
+    
+        if (!responses || !Array.isArray(responses) || responses.length === 0) {
+          return res.status(400).json({ message: 'Invalid responses data' });
         }
-        const surveyResponse = {
-            questionNumber :req.body.questionNumber,
-            response : req.body.response, 
-        };
-
-        const newResponses = await Database.create(surveyResponse)
-        return res.status(201).send(newResponses)
-
-     } catch(error) {
-        console.log(error.message);
-        res.status(500).send({message : error.message})
-     }
+    
+        const survey = new Survey({ responses });
+        await survey.save();
+    
+        res.status(201).json({ message: 'Responses saved successfully', survey });
+      } catch (error) {
+        console.error('Error saving responses:', error);
+        res.status(500).json({ message: 'Server error' });
+      }
 } )
 
 
