@@ -1,8 +1,9 @@
 const express = require("express")
 const mongoose = require('mongoose')
 const cors = require("cors");
-const Database = require('./model/dataSchema')
+// const Database = require('./model/dataSchema')
 const User = require("./model/userSchema")
+const Survey = require("./model/dataSchema");
 
 const dotenv = require('dotenv');
 dotenv.config();
