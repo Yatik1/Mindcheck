@@ -40,10 +40,6 @@ const responseSchema = new mongoose.Schema({
 
 const surveySchema = new mongoose.Schema({
   responses: [responseSchema],
-  createdAt: {
-    type: Date,
-    default: Date.now
-  }
 });
 
 const Survey = mongoose.model('Survey', surveySchema);
